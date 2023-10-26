@@ -1,0 +1,49 @@
+body{
+    background-color: #171b27;
+    width: 40%; /* Defina a largura desejada */
+    margin: 0 auto; /* Centralize horizontalmente */
+    display: flex; /* Ative o flexbox */
+    flex-direction: column; /* Alinhe verticalmente */
+    justify-content: center;
+    color: #ccd0d2;
+    margin-top:80px;
+
+   
+}
+
+.conteudo{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+    background-color: #242937;
+   
+}
+
+a{
+
+    text-decoration: none;
+    color: #ccd0d2
+}
+
+.links{
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+
+li{
+    margin-bottom: 10px;
+    
+}
+
+
+
+ul,li{
+    list-style: none;
+}
