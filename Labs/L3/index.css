@@ -1,0 +1,90 @@
+.faixa{
+    margin-top: 10px;
+    background-image:url(img/body-background.png);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sobre{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
+.distribuicao{
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgb(218, 211, 211);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.distribuicao img{
+    max-width: 100%;
+}
+/* SEGUNDA SEÇÃO*/
+
+.linha{
+    background-color: black;
+    height: 2px;
+
+    
+}
+#historia{
+    margin-bottom: 40px;
+}
+
+
+
+.familia{
+    background-color: rgb(218, 211, 211);
+    width: 20%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+  
+}
+
+.familia img{
+    max-width: 100%;
+    
+
+}
+
+
+/* terceira SEÇÃO*/
+
+.diferenciais{
+    margin-bottom: 40px;
+}
+
+
+
+.comprar{
+    background-color: rgb(170, 176, 239);
+    height: 80px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.comprar p{
+    text-align: center;
+    margin: auto ;
+    color: rgb(64, 60, 192);
+}
+
+footer{
+    display: flex;
+    align-items: left;
+    gap:30px;
+}

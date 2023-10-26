@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/livros.css" rel="stylesheet">
+    <title>Autenticacao</title>
+
+    <div class="cabecalho">
+        <h1>Fundamentos da web</h1>
+        <p>Exercicios</p>
+    </div>
+
+    <div class="barra"><a href="index.html">Retornar</a></div>
+</head>
+<body>
+
+    <h2>Cadastro de livro</h2>
+
+    <form method="post" action="http://httpbin.org/post">
+
+        <fieldset>
+            <legend>Cadastro de livros</legend>
+
+            <div class="conteudo">
+                <label for="titulo">Titulo:</label>
+                <input type="text" name="login" placeholder=" Digite o titulo do livro">
+
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao"></textarea>
+
+                <label for="autores">Autores:</label>
+                <input type="text" name="autores" placeholder=" Digite os autores da obra">
+
+                <label for="estilo">Estilo:</label>
+                <select name="select">
+                    <option value="academico" selected>Acadêmico</option>
+                </select>
+
+
+                <input type="submit" value="Login">
+                <input type="reset" value="Limpar">
+
+            </div>
+            
+          </fieldset>
+    </form>
+
+
+
+    
+</body>
+</html>

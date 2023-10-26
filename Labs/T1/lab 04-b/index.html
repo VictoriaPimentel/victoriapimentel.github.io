@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css" rel="stylesheet">
+    <title>Fundamentos da web</title>
+</head>
+<body>
+    <h2>Fundamentos da web</h2>
+
+    <form method="post" action="http://httpbin.org/post">
+
+        <fieldset>
+            <legend>Formulário simples</legend>
+
+            <div class="conteudo">
+
+                <div class="blocos">
+                    <label for="nome">Nome:</label>
+                    <input type="text"  name="nome" placeholder=" Digite seu nome" required >
+                </div>
+                
+                <div class="blocos">
+                    <label for="idade">Idade:</label>
+                    <input type="number"  name="idade" placeholder=" Digite sua idade" required min="18" max="100" >
+                </div>
+
+                <div class="blocos">
+                    <label for="genero">Genero:</label>
+                    <input type="radio" name="genero" value="masc"> Masculino 
+                    <input type="radio" name="genero" value="fem"> Feminino
+                    <input type="radio" name="genero" value="outros"> Outros
+                </div>
+
+                <div class="blocos">
+
+                    <label for="email"> Email:</label>
+                    <input type="email"  name="email" placeholder=" Digite seu email" required >
+                </div>
+
+                <div class="blocos">
+                    <label for="senha">Senha:</label>
+                    <input type="password"  name="senha" >
+
+                </div>
+
+                <div class="blocos">
+                    <label for="pais">Escolha um pais:</label>
+                    <select name="select">
+                    <option value="brasil" selected>Brasil</option>
+                    <option value="estados unidos" >Estados Unidos</option>
+                    <option value="canada">Canadá</option>
+                    <option value="outros">Outros</option>
+                </select>
+                </div>
+
+                <div class="blocos">
+                    <label for="observacoes">Observações:</label>
+                    <textarea name="observacoes"></textarea>
+                </div>
+
+
+                <div class="botao">
+                    <input type="submit" value="Enviar">
+                </div>
+
+                
+
+                
+            </div> 
+
+
+
+
+
+        </fieldset>
+    </form>
+</body>
+</html>

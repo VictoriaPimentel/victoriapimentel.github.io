@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/contatos.css" rel="stylesheet">
+    <title>Autenticacao</title>
+
+    <div class="cabecalho">
+        <h1>Fundamentos da web</h1>
+        <p>Exercicios</p>
+    </div>
+
+    <div class="barra"><a href="index.html">Retornar</a></div>
+</head>
+<body>
+
+    <h2>Contatos</h2>
+
+    <form method="post" action="http://httpbin.org/post">
+
+        <fieldset>
+            <legend>Entre em contato</legend>
+
+            <div class="conteudo">
+               <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder=" Digite seu nome">
+          
+
+          
+                <label for="assunto">Assunto:</label>
+                <input type="date" name="assunto" >
+         
+
+                <label for="ocorrencia">Data da ocorrencia:</label>
+                <input type="date" name="ocorrencia" >
+
+                <label for="foto">Foto da ocorrencia:</label>
+                <input type="file" name="foto" > 
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" placeholder=" Digite seu telefone">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder=" Digite seu email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem">
+                </textarea>
+
+                <label for="estilo">Estilo:</label>
+                <select name="select">
+                    <option value="academico" selected>Acadêmico</option>
+                </select>
+
+            
+
+                <input type="submit" value="Adicionar">
+                <input type="reset" value="Limpar">
+
+            </div>
+            
+
+            
+          </fieldset>
+    </form>
+
+
+
+    
+</body>
+</html>
