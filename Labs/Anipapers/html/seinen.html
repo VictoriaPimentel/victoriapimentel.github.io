@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/categoria.css">
+    <title>Seinen</title>
+    
+</head>
+
+<header>
+
+    <nav>
+
+        
+        <div class="container">
+        
+        <div class="nav-1">
+            <h1>Anipapers</h1>
+            <a href="../html/categoria.html">Ver todas as categorias</a>
+            
+        </div>
+
+        <div class="nav-2">
+            <input type="text" id="pesquisa" placeholder="Pesquise seu anime">
+            <a href="#"><img src="../../img/icons8-favorito-50.png" class="icone" width="30px" height="30px"></a>
+            <p>Favoritos</p>
+            <a href="#"><img src="../../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+            <p>Login/cadastro</p>
+        </div>
+    </div>
+        
+    
+    </nav>
+</header>
+
+<body>
+    <h1 class=" categoria">Seinen</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Elfen Lied': [
+                "https://i.pinimg.com/564x/dd/ef/07/ddef07d495dd626ab0e39768d8ae0963.jpg",
+                "https://i.pinimg.com/564x/0e/d8/cd/0ed8cd84a657aefb3d524970f7d20845.jpg",
+                "https://i.pinimg.com/564x/47/fd/40/47fd40ece804bd0001560a6156175ce0.jpg",
+               
+                
+            ],
+            'Bersek': [
+                "https://i.pinimg.com/564x/44/f8/c4/44f8c42fb41c2adf91f7b3320dfee5d9.jpg",
+                "https://i.pinimg.com/564x/50/08/45/50084522b8644c3ec6c34147324d0c0d.jpg",
+                "https://i.pinimg.com/736x/e4/d7/0e/e4d70eed758fc931affbc7db6d321506.jpg"
+            ],
+
+            'Death Note': [
+                "https://i.pinimg.com/564x/b0/35/1e/b0351ee4617072ee4cc9e2e2d85ced24.jpg",
+                "https://i.pinimg.com/564x/6d/48/b6/6d48b676e0964bee2401e68ea167bf47.jpg",
+                "https://i.pinimg.com/564x/22/73/95/22739557e4527847ce53eebdc5e33c35.jpg"
+            ],
+
+            'Angel Beats': [
+                "https://i.pinimg.com/564x/1d/19/13/1d19132fd6874b5f019e43730136d598.jpg",
+                "https://i.pinimg.com/564x/67/98/24/6798249250da0cc1aa25b9647772ed4f.jpg",
+                "https://i.pinimg.com/564x/b8/82/2a/b8822ac5b73b99d9487ec383addd3a57.jpg"
+            ],
+
+            'Another': [
+                "https://i.pinimg.com/564x/00/55/5a/00555a05850e86aaad4130ea2624ba16.jpg",
+                "https://i.pinimg.com/564x/f1/b8/a6/f1b8a6b76ae32a3332047851db8470f2.jpg",
+                "https://i.pinimg.com/564x/71/0b/b3/710bb3a493f2e51801d03f1bac860216.jpg"
+            ],
+        };
+
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+    </script>
+</body>
+</html>

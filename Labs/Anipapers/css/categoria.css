@@ -6,7 +6,7 @@ body {
     font-family: 'Handlee', cursive;
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
-   
+ 
 
 }
 
@@ -17,10 +17,16 @@ body {
 
     nav{
         background-color: #171B27;
+       
+        
+        
+      }
+      
+      .container{
+        width: 1024px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
-        padding-left: 100px;
-        padding-right: 100px;
         
         
     }
@@ -28,13 +34,15 @@ body {
     .nav-1, .nav-2 {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        
+        justify-content: space-around;
+        flex-grow: 1;
         
       }
 
       .nav-1{
+       
         gap: 200px;
+        /*width: 512px;*/
       }
 
       .nav-1 h1{
@@ -47,6 +55,7 @@ body {
 
       .nav-2{
         gap: 20px;
+        
       }
 
       input{
@@ -79,7 +88,7 @@ body {
     }
 
     .categoria{
-        font-size: 70px;
+        font-size: 50px;
         font-family: 'Acme', sans-serif;
         font-family: 'Handlee', cursive;
         font-family: 'Montserrat', sans-serif;
@@ -104,11 +113,15 @@ body {
     .imagens{
         margin-bottom: 20px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 40px;
         
     }
+
+   
+
+  
 
     
 }

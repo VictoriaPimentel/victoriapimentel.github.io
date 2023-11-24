@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/categoria.css">
+    <title>Shounen</title>
+    
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav>
+    
+            
+            <div class="container">
+            
+            <div class="nav-1">
+                <h1>Anipapers</h1>
+                <a href="../html/categoria.html">Ver todas as categorias</a>
+                
+            </div>
+    
+            <div class="nav-2">
+                <input type="text" id="pesquisa" placeholder="Pesquise seu anime">
+                <a href="#"><img src="../../img/icons8-favorito-50.png" class="icone" width="30px" height="30px"></a>
+                <p>Favoritos</p>
+                <a href="#"><img src="../../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                <p>Login/cadastro</p>
+            </div>
+        </div>
+            
+        
+        </nav>
+    </header>
+    
+    <h1 class=" categoria">Shounen</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Tokyo Revengers': [
+                "https://i.pinimg.com/564x/a6/fd/21/a6fd210e3c778f35426d37b79ec5c6f2.jpg",
+                "https://i.pinimg.com/564x/2a/6a/f7/2a6af7f0d2153164e192f612c9a322dd.jpg",
+                "https://i.pinimg.com/564x/2c/57/f0/2c57f0948c0b63c130733bac17644f61.jpg",
+               
+                
+            ],
+            'My Hero Academy': [
+                "https://i.pinimg.com/564x/fb/b1/f1/fbb1f161c710d0865f184cc4f9403737.jpg",
+                "https://i.pinimg.com/564x/6c/d2/a8/6cd2a81635bfc54d9183c6b785db169f.jpg",
+                "https://i.pinimg.com/564x/54/b6/15/54b6159500a8d6b6e68ad9bcad9926ed.jpg"
+            ],
+
+            'One Piece': [
+                "https://i.pinimg.com/564x/5f/f1/0e/5ff10e6e370c9fdbdaaecead50da3f0b.jpg",
+                "https://i.pinimg.com/564x/c2/8f/89/c28f89eab7b41bb63ba758e120362ddb.jpg",
+                "https://i.pinimg.com/564x/0f/95/e0/0f95e03494c8f02cab117d105ad30bcf.jpg"
+            ],
+
+            'Demon Slayer': [
+                "https://i.pinimg.com/564x/0c/1f/85/0c1f85605f496e516aefbef6964d7cc8.jpg",
+                "https://i.pinimg.com/564x/47/ef/7b/47ef7b090e6ccbba9449773146f353ef.jpg",
+                "https://i.pinimg.com/564x/c6/9e/16/c69e1642febc419c21a462651c3d638a.jpg"
+            ],
+
+            'Hunter X Hunter': [
+                "https://i.pinimg.com/564x/32/6b/06/326b064f1961e504e27bb9e12804f581.jpg",
+                "https://i.pinimg.com/564x/29/e8/35/29e8359ef147b8e8adffc0033f682531.jpg",
+                "https://i.pinimg.com/564x/8c/da/44/8cda443638ca6e7c246a24b605b9b502.jpg"
+            ],
+        };
+
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+    </script>
+</body>
+</html>

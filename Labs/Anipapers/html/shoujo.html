@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/categoria.css">
+    <title>Shoujo</title>
+    
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav>
+    
+            
+            <div class="container">
+            
+            <div class="nav-1">
+                <h1>Anipapers</h1>
+                <a href="../html/categoria.html">Ver todas as categorias</a>
+                
+            </div>
+    
+            <div class="nav-2">
+                <input type="text" id="pesquisa" placeholder="Pesquise seu anime">
+                <a href="#"><img src="../../img/icons8-favorito-50.png" class="icone" width="30px" height="30px"></a>
+                <p>Favoritos</p>
+                <a href="#"><img src="../../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                <p>Login/cadastro</p>
+            </div>
+        </div>
+            
+        
+        </nav>
+    </header>
+    <h1 class=" categoria">Shoujo</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Kimi Ni Todoke': [
+                "https://i.pinimg.com/736x/c9/78/45/c97845d1de2d24f45af597d303374945.jpg",
+                "https://i.pinimg.com/564x/07/aa/c3/07aac3fb27000c2b385b1e1ffb134618.jpg",
+                "https://i.pinimg.com/564x/0c/eb/ea/0cebea37f45fa73a0c44dd7d7a68d462.jpg",
+               
+                
+            ],
+            'Sailor Moon': [
+                "https://i.pinimg.com/564x/7d/73/55/7d73554825659bccabb7ff772c5fe57f.jpg",
+                "https://i.pinimg.com/564x/98/d5/3e/98d53e5b54c9ed6637d0c45f8831bb5a.jpg",
+                "https://i.pinimg.com/564x/9d/a8/24/9da824c644d942d03cc433bf7cf17f41.jpg"
+            ],
+
+            'Your Lie In April ': [
+                "https://i.pinimg.com/564x/fb/6a/14/fb6a14323c456311a56621e0415e230a.jpg",
+                "https://i.pinimg.com/564x/07/3c/99/073c995a7d7091d1f3019b044b3680a3.jpg",
+                "https://i.pinimg.com/564x/41/21/0a/41210ae823b4f2e1d556c71ec9cf3543.jpg"
+            ],
+
+            'Ao Haru Ride': [
+                "https://i.pinimg.com/564x/2b/74/33/2b7433b3f114f8d8d49a2e849a15bca9.jpg",
+                "https://i.pinimg.com/564x/c5/cf/f6/c5cff6f1762f14e3ad70c78435f2106e.jpg",
+                "https://i.pinimg.com/564x/75/3d/91/753d912ec48090881d698acc28aa12b8.jpg"
+            ],
+
+            'Yona of the Dawn': [
+                "https://i.pinimg.com/564x/e5/ed/54/e5ed54cfc167e387c335e543e8cf7852.jpg",
+                "https://i.pinimg.com/564x/57/0c/52/570c526954ebfd9767c212edbe40dc18.jpg",
+                "https://i.pinimg.com/564x/7f/9e/cc/7f9ecc96691b271a6a0f7a38640d9c69.jpg"
+            ],
+        };
+
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+    </script>
+</body>
+</html>
