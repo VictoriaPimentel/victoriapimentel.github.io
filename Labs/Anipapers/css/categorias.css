@@ -1,5 +1,5 @@
 body {
-    text-align: center;
+    
     background-color: #1F2535;
     color: #E6E3E3 ;
     font-family: 'Acme', sans-serif;
@@ -15,6 +15,8 @@ body {
 
 @media (min-width:1024px){
 
+
+    /*------NAV-------*/
     nav{
         background-color: #171B27;
         display: flex;
@@ -78,37 +80,32 @@ body {
         color: #E6E3E3 ;
     }
 
-    .categoria{
-        font-size: 70px;
-        font-family: 'Acme', sans-serif;
-        font-family: 'Handlee', cursive;
-        font-family: 'Montserrat', sans-serif;
-       font-family: 'Nunito Sans', sans-serif;
-       
-    }
 
-    .nome {
-        margin-top: 100px;
-        margin-bottom: 40px;
-        font-size: 30px;
-    }
-    .imagem {
-        
-        width: 350px;
-        height: 500px;
-        border-radius: 20px;
-          
-        
-    }
-    
-    .imagens{
+     .categoria-1,  .categoria-2{
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 40px;
+        font-size: 50px;
+     }
+      
+      .categoria {
+        display: flex;
+        flex-wrap: wrap; 
+      }
+
+      .categoria-1 p{
         
-    }
+        background-color: #171B27;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+
 
     
 }
