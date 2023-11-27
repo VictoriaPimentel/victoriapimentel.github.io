@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/categoria.css">
+    <title>Isekai</title>
+    
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav>
+    
+            
+            <div class="container-nav">
+            
+            <div class="nav-1">
+                <a href="index.html"><h1>Anipapers</h1></a>
+                <a href="categoria.html">Categorias</a>
+                
+            </div>
+    
+            <div class="nav-2">
+                
+                
+                <a href="cadastro.html"><img src="../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                <p>Login/cadastro</p>
+            </div>
+        </div>
+            
+        
+        </nav>
+    </header>
+    <h1 class=" categoria">Kodomo</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Pokémon': [
+                "https://i.pinimg.com/564x/72/5d/f2/725df20bca1680fcd45a5d788c08dd1f.jpg",
+                "https://i.pinimg.com/564x/0c/28/31/0c2831b6c9454c13fcf26bf003c6eec5.jpg",
+                "https://i.pinimg.com/564x/8f/80/fa/8f80fa55b2898c44829da106780f5aa2.jpg",
+               
+                
+            ],
+            'A viagem de Chihiro': [
+                "https://i.pinimg.com/564x/fd/f2/8d/fdf28d652bb1da4665b3992c2da5d144.jpg",
+                "https://i.pinimg.com/564x/41/3a/1b/413a1bf0e9c4537e10b6683acfdd323e.jpg",
+                "https://i.pinimg.com/564x/26/45/3b/26453bd31f15b49721955e8082c7e3d6.jpg"
+            ],
+
+            'Beyblade Burst Rise ': [
+                "https://i.pinimg.com/564x/87/68/2a/87682af6f38537fb7d77bb700e29ee1c.jpg",
+                "https://i.pinimg.com/564x/d4/33/0d/d4330d119f31e0d32445afe3afe12e8f.jpg",
+                "https://i.pinimg.com/564x/30/d2/74/30d274d1bc58dae3c20565fdfb82f485.jpg"
+            ],
+
+            'Little witch Academia': [
+                "https://i.pinimg.com/564x/9b/77/b0/9b77b04c6d7d7570494596e831a9c6d7.jpg",
+                "https://i.pinimg.com/564x/6c/3f/3b/6c3f3b66f5058a37a203741a6bbd1511.jpg",
+                "https://i.pinimg.com/564x/a0/af/02/a0af0237dd5a8fa0172b0d96d6a4202f.jpg"
+            ],
+
+            'Hamtaro': [
+                "https://i.pinimg.com/564x/d1/e6/6d/d1e66d05fd52b972f0a95ec81a4c8a4c.jpg",
+                "https://i.pinimg.com/564x/09/21/0a/09210a9c40f6f18d2f1e5e56ba3339df.jpg",
+                "https://i.pinimg.com/564x/b8/85/a0/b885a095c6141f11b5fba15a1e91fe40.jpg"
+            ],
+        };
+
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+    </script>
+</body>
+</html>

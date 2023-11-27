@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/categoria.css">
+    <title>Isekai</title>
+    
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav>
+    
+            
+            <div class="container-nav">
+            
+            <div class="nav-1">
+                <a href="index.html"><h1>Anipapers</h1></a>
+                <a href="categoria.html">Categorias</a>
+                
+            </div>
+    
+            <div class="nav-2">
+                
+                
+                <a href="cadastro.html"><img src="../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                <p>Login/cadastro</p>
+            </div>
+        </div>
+            
+        
+        </nav>
+    </header>
+    <h1 class=" categoria">Sci-Fi</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Steins;Gate': [
+                "https://i.pinimg.com/564x/7b/2e/d0/7b2ed0cbc5201c3a7a6d5a63003e03d4.jpg",
+                "https://i.pinimg.com/564x/46/76/ab/4676ab0fd3dc0e3134a976c5f541b77c.jpg",
+                "https://i.pinimg.com/564x/b0/86/07/b08607d6390897f8afbe09ebb5925776.jpg",
+               
+                
+            ],
+            'Yakusoku no Neverland': [
+                "https://i.pinimg.com/564x/cd/73/ee/cd73ee5b582a405dc72a602900d32331.jpg",
+                "https://i.pinimg.com/564x/f2/89/20/f289200ffbec649608d16c36190e06ae.jpg",
+                "https://i.pinimg.com/564x/10/3b/d6/103bd6cb7734b046c0ce3e4284354004.jpg"
+            ],
+
+            'Dr. Stone ': [
+                "https://i.pinimg.com/564x/be/f5/9d/bef59de0d11983aa60c8494ed069157b.jpg",
+                "https://i.pinimg.com/564x/33/5e/60/335e60c001b6c415582602d81fe22716.jpg",
+                "https://i.pinimg.com/564x/7d/89/f0/7d89f0cc0892644f04aeaa184e99ff3f.jpg"
+            ],
+
+            'Fire Force': [
+                "https://i.pinimg.com/564x/06/a1/e5/06a1e56ced7b13a64ea29bce9342cd44.jpg",
+                "https://i.pinimg.com/564x/d3/57/22/d35722e192595e0a70c03e86ccf30fe9.jpg",
+                "https://i.pinimg.com/564x/96/d6/10/96d610fccd243e0b7064ee3f91d12778.jpg"
+            ],
+
+            'Gakusen Toshi Asterisk': [
+                "https://i.pinimg.com/564x/2c/9f/e6/2c9fe6ea7dba944a598a53b51c406ea5.jpg",
+                "https://i.pinimg.com/564x/9d/71/66/9d716670fa7c740f739422e1089d808a.jpg",
+                "https://i.pinimg.com/564x/58/7e/bf/587ebfc16721a8b161fc20ac211d40b9.jpg"
+            ],
+        };
+
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+    </script>
+</body>
+</html>

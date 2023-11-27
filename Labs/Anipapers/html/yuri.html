@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/categoria.css">
+    <title>Isekai</title>
+    
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav>
+    
+            
+            <div class="container-nav">
+            
+            <div class="nav-1">
+                <a href="index.html"><h1>Anipapers</h1></a>
+                <a href="categoria.html">Categorias</a>
+                
+            </div>
+    
+            <div class="nav-2">
+                
+                
+                <a href="cadastro.html"><img src="../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                <p>Login/cadastro</p>
+            </div>
+        </div>
+            
+        
+        </nav>
+    </header>
+    <h1 class=" categoria">Yuri</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Otherside Picnic': [
+                "https://i.pinimg.com/564x/4e/67/d5/4e67d5acdc9691010447a2e7d5043391.jpg",
+                "https://i.pinimg.com/564x/ce/45/03/ce45030a2b8a05f27c30d71c0e54575c.jpg",
+                "https://i.pinimg.com/564x/ce/9e/31/ce9e3170034d02ed654b61ee7b605f57.jpg",
+               
+                
+            ],
+            'Asagao to Kase-san': [
+                "https://i.pinimg.com/564x/7d/c1/d4/7dc1d42aaec91a7c41c5ac5b7fcaa6d4.jpg",
+                "https://i.pinimg.com/564x/58/e3/65/58e365c5f0e9d0095c5fa34fdc2f1fe3.jpg",
+                "https://i.pinimg.com/564x/94/4e/0c/944e0ca34cfd944b85ec066c8c0ed128.jpg"
+            ],
+
+            'Adachi to Shimamura  ': [
+                "https://i.pinimg.com/564x/d7/72/de/d772debe1e9b370d3503c6526898a6c9.jpg",
+                "https://i.pinimg.com/564x/e7/ce/47/e7ce471f07662fa2c6cae2cec2fe9f66.jpg",
+                "https://i.pinimg.com/564x/b3/be/32/b3be32f1b8a14f70104cd047b3ef1a6c.jpg"
+            ],
+
+            'Koisuru Asteroid ': [
+                "https://i.pinimg.com/564x/a6/9b/fd/a69bfdf5f8f79ce537cf3015fbbbb431.jpg",
+                "https://i.pinimg.com/564x/51/09/ab/5109ab20e618df36b9c7ade189896988.jpg",
+                "https://i.pinimg.com/564x/f6/38/5a/f6385a906571545747a82d00df9ae7e5.jpg"
+            ],
+
+            'Bloom Into You': [
+                "https://i.pinimg.com/564x/0a/cb/0f/0acb0fe6be79e88a51d1432ea7c6397e.jpg",
+                "https://i.pinimg.com/564x/52/96/2a/52962ae1bbbffc032d69c0f6b7cbb77a.jpg",
+                "https://i.pinimg.com/564x/71/51/1b/71511b895863d6397e8f392ea8346ed9.jpg"
+            ],
+        };
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+    </script>
+</body>
+</html>

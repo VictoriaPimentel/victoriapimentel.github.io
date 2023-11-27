@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/categoria.css">
+    <title>Isekai</title>
+    
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav>
+    
+            
+            <div class="container-nav">
+            
+            <div class="nav-1">
+                <a href="index.html"><h1>Anipapers</h1></a>
+                <a href="categoria.html">Categorias</a>
+                
+            </div>
+    
+            <div class="nav-2">
+                
+                
+                <a href="cadastro.html"><img src="../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                <p>Login/cadastro</p>
+            </div>
+        </div>
+            
+        
+        </nav>
+    </header>
+    <h1 class=" categoria">Josei</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Petshop of Horrors': [
+                "https://i.pinimg.com/564x/52/54/3b/52543bfda82f83f0a2f24b2de12e7816.jpg",
+                "https://i.pinimg.com/564x/98/04/cd/9804cdfb905ce47b523f63c0f06a960f.jpg",
+                "https://i.pinimg.com/564x/d5/e2/fe/d5e2fef19e142959c8287cd863b10f25.jpg",
+               
+                
+            ],
+            'Paradise Kiss': [
+                "https://i.pinimg.com/564x/1e/08/83/1e088361052eea8456405cd41fa8df72.jpg",
+                "https://i.pinimg.com/564x/46/69/e2/4669e26bd25e6085a7914a422326c6b5.jpg",
+                "https://i.pinimg.com/564x/85/66/2b/85662bbf0688e38e8d404c0fb7b819fa.jpg"
+            ],
+
+            'Chihayafuru ': [
+                "https://i.pinimg.com/564x/0b/72/c2/0b72c2ef5c406df03d6ac0484f1bcb2f.jpg",
+                "https://i.pinimg.com/564x/64/a4/41/64a4411a3ebf1706e8ff4e728eefcdab.jpg",
+                "https://i.pinimg.com/564x/cf/4d/d6/cf4dd646468e7a726d73d8abe3ff6805.jpg"
+            ],
+
+            'Diabolik Lovers': [
+                "https://i.pinimg.com/564x/43/9b/30/439b304e2913d3ba085bf1937f85e17e.jpg",
+                "https://i.pinimg.com/564x/a4/5a/7c/a45a7c83f373d06bc63c2237faf5e583.jpg",
+                "https://i.pinimg.com/564x/f1/14/98/f114984420e9fcfb0881e46b2a0d3341.jpg"
+            ],
+
+            'Kakuriyo no Yadomeshi': [
+                "https://i.pinimg.com/564x/5f/25/76/5f257678cd24d2b5e4b954a6608ee5b0.jpg",
+                "https://i.pinimg.com/564x/6b/be/17/6bbe1725163a019ed5a11d4092ffc856.jpg",
+                "https://i.pinimg.com/564x/bd/cd/85/bdcd85987e24ee88382f94d2c10be690.jpg"
+            ],
+        };
+
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                    divDados += `<a href="#" download="imagem_anime.png" class="link-download" data-src="${imagem}">`;
+                    divDados += `<img src="${imagem}" class="imagem"></img>`;
+                    divDados += `</a>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+
+        const links = document.querySelectorAll('.link-download');
+    </script>
+</body>
+</html>

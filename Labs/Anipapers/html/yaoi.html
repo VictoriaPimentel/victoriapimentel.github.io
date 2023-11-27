@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/categoria.css">
+    <title>Isekai</title>
+    
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <nav>
+    
+            
+            <div class="container-nav">
+            
+            <div class="nav-1">
+                <a href="index.html"><h1>Anipapers</h1></a>
+                <a href="categoria.html">Categorias</a>
+                
+            </div>
+    
+            <div class="nav-2">
+                
+                
+                <a href="cadastro.html"><img src="../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                <p>Login/cadastro</p>
+            </div>
+        </div>
+            
+        
+        </nav>
+    </header>
+    <h1 class=" categoria">Yaoi</h1>
+    <div id="dados"></div>
+
+    <script>
+        const animes = {
+            'Given': [
+                "https://i.pinimg.com/564x/58/51/f0/5851f08f3cee914bbd39eb043696ec3a.jpg",
+                "https://i.pinimg.com/564x/bf/32/2a/bf322a36c57bc549a5fd75ada630388b.jpg",
+                "https://i.pinimg.com/564x/76/a6/e6/76a6e612ba7b7410d976f446a9ca1f1a.jpg",
+               
+                
+            ],
+            'Doukyuusei': [
+                "https://i.pinimg.com/564x/12/48/34/124834947dc3081caa3d01a9a00cb341.jpg",
+                "https://i.pinimg.com/564x/3b/63/a2/3b63a2d4802a109ded966a9d00df1977.jpg",
+                "https://i.pinimg.com/564x/70/3d/59/703d598fbd64181337929a5544d2b520.jpg"
+            ],
+
+            'Banana Fish  ': [
+                "https://i.pinimg.com/564x/9c/a6/99/9ca699e03a704acf0759ea3258f42971.jpg",
+                "https://i.pinimg.com/564x/3f/69/9e/3f699e0691d828bed2069548ab051d3d.jpg",
+                "https://i.pinimg.com/564x/e7/de/7e/e7de7ee5aa90753247cbd97248dcbb70.jpg"
+            ],
+
+            'Gakuen Heaven ': [
+                "https://i.pinimg.com/564x/e9/08/a9/e908a9cd3e8048f2cc3f48350261d79b.jpg",
+                "https://i.pinimg.com/564x/71/48/b4/7148b44e8d125f9b85d9cc0124ecd85d.jpg",
+                "https://i.pinimg.com/564x/a4/d2/9d/a4d29d386b95879ed659c51454fed8c0.jpg"
+            ],
+
+            'Hitorijime My Hero': [
+                "https://i.pinimg.com/564x/bf/75/b3/bf75b3bbd7c38bbaf81f5f6a1bf10bcd.jpg",
+                "https://i.pinimg.com/564x/95/b5/31/95b5319b2b5cef36d319d2a27aac64fc.jpg",
+                "https://i.pinimg.com/564x/b5/4a/aa/b54aaabf71168cfcfde6a2c3e199f76d.jpg"
+            ],
+        };
+
+        let divDados = " "
+        
+        
+        for (const [nome, imagens] of Object.entries(animes)) {
+            // Nome
+            divDados += `<h2 class="nome">${nome}</h2>`;
+            
+            // Imagens
+            divDados += '<div class="imagens">';
+                for (const imagem of imagens) {
+                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                 }
+            divDados += '</div>';
+        }
+
+        document.getElementById('dados').innerHTML = divDados;
+    </script>
+</body>
+</html>

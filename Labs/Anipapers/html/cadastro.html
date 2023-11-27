@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/categorias.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
     <title>Cadastro</title>
     
 </head>
@@ -16,19 +16,18 @@
         <nav>
     
             
-            <div class="container">
+            <div class="container-nav">
             
             <div class="nav-1">
-                <h1>Anipapers</h1>
-                <a href="../html/categoria.html">Ver todas as categorias</a>
+                <a href="index.html"><h1>Anipapers</h1></a>
+                <a href="categoria.html">Categorias</a>
                 
             </div>
     
             <div class="nav-2">
-                <input type="text" id="pesquisa" placeholder="Pesquise seu anime">
-                <a href="#"><img src="../../img/icons8-favorito-50.png" class="icone" width="30px" height="30px"></a>
-                <p>Favoritos</p>
-                <a href="#"><img src="../../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                
+                
+                <a href="cadastro.html"><img src="../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
                 <p>Login/cadastro</p>
             </div>
         </div>
@@ -36,4 +35,66 @@
         
         </nav>
     </header>
+
+    <div class="formularios">
+
+    <div class="form-1">
+
+    <h1 class="titulo">LOGIN</h1>
+
+        <div class="fundo">
+            <form>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Digite seu email">
+
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua senha">
+
+                <input type="button" value="Logar" class="botao">
+
+
+            </form>
+            
+        </div>
+
+    </div>
+
+
+
+    <div class="form-2">
+
+        <h1 class="titulo">CADASTRO</h1>
+    
+            <div class="fundo">
+                <form>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu email">
+    
+    
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome">
+
+                    
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" placeholder="Digite sua senha">
+
+                    
+                    <label for="whatsapp">whatsapp:</label>
+                    <input type="tel" name="whatsapp" placeholder="Digite seu whatsapp">
+    
+                    <input type="button" value="Cadastrar" class="botao">
+    
+    
+                </form>
+                
+            </div>
+    
+        </div>
+
+    </div>
+
+
     </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/categoria.css">
+    <link rel="stylesheet" href="../css/categoria.css">
     <title>Shoujo</title>
     
 </head>
@@ -17,19 +17,18 @@
         <nav>
     
             
-            <div class="container">
+            <div class="container-nav">
             
             <div class="nav-1">
-                <h1>Anipapers</h1>
-                <a href="../html/categoria.html">Ver todas as categorias</a>
+                <a href="index.html"><h1>Anipapers</h1></a>
+                <a href="categoria.html">Categorias</a>
                 
             </div>
     
             <div class="nav-2">
-                <input type="text" id="pesquisa" placeholder="Pesquise seu anime">
-                <a href="#"><img src="../../img/icons8-favorito-50.png" class="icone" width="30px" height="30px"></a>
-                <p>Favoritos</p>
-                <a href="#"><img src="../../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
+                
+                
+                <a href="cadastro.html"><img src="../img/icons8-usuário-de-gênero-neutro-64.png" class="icone" width="30px" height="30px"></a>
                 <p>Login/cadastro</p>
             </div>
         </div>
@@ -43,7 +42,7 @@
     <script>
         const animes = {
             'Kimi Ni Todoke': [
-                "https://i.pinimg.com/736x/c9/78/45/c97845d1de2d24f45af597d303374945.jpg",
+                "https://i.pinimg.com/564x/c9/78/45/c97845d1de2d24f45af597d303374945.jpg",
                 "https://i.pinimg.com/564x/07/aa/c3/07aac3fb27000c2b385b1e1ffb134618.jpg",
                 "https://i.pinimg.com/564x/0c/eb/ea/0cebea37f45fa73a0c44dd7d7a68d462.jpg",
                
@@ -84,12 +83,19 @@
             // Imagens
             divDados += '<div class="imagens">';
                 for (const imagem of imagens) {
-                divDados += `<img src="${imagem}" class="imagem"></img>`;
+                    divDados += `<a href="#" download="imagem_anime.png" class="link-download" data-src="${imagem}">`;
+                    divDados += `<img src="${imagem}" class="imagem"></img>`;
+                    divDados += `</a>`;
                  }
             divDados += '</div>';
         }
 
         document.getElementById('dados').innerHTML = divDados;
+
+        const links = document.querySelectorAll('.link-download');
+
+  
+  
     </script>
 </body>
 </html>
